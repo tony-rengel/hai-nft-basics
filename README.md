@@ -5,9 +5,9 @@
 Example code for NFT creation in create-hai.ts, with definitions from contract-calls.ts  
 ```npx ts-node create-hai.ts```
 
-##Recall NFT Values  
+## Recall NFT Values  
 
-###Stacks CLI:  
+### Stacks CLI:  
 
 `-t` for testnet, remove for mainnet calls.  
 `call_read_only_contract_func` to call R/O func within smart contract.  
@@ -18,7 +18,7 @@ Example code for NFT creation in create-hai.ts, with definitions from contract-c
 
 ```stx -t call_read_only_contract_func ST33F36Q24WMWZPC89597QRPZYE2FB7FA70D4RRQQ contract-hook-16472481878 get-meta-data ST33F36Q24WMWZPC89597QRPZYE2FB7FA70D4RRQQ```  
   
-###TypeScript:  
+### TypeScript:  
 Example code for NFT creation in query-hai.ts  
 ```npx ts-node query-hai.ts```  
   
