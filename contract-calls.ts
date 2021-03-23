@@ -10,8 +10,7 @@ import {
 
   import * as fs from "fs";
   const fetch = require("node-fetch");
-  const BigNum = require("bn.js"
-);
+  const BigNum = require("bn.js");
 
 const noSidecar = true;
 const mocknet = false;
