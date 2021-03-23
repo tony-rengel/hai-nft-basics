@@ -1,35 +1,20 @@
 import {
   makeContractCall,
-  contractPrincipalCV,
-  bufferCVFromString,
-  makeSTXTokenTransfer,
-  standardPrincipalCV,
-  stringUtf8CV,
-  listCV,
-  noneCV,
-  tupleCV,
   uintCV,
   stringAsciiCV,
-  PostConditionMode,
-  broadcastTransaction,
-  makeContractDeploy,
-  StacksTransaction,
-  TxBroadcastResultOk,
-  TxBroadcastResultRejected,
 } from "@stacks/transactions";
 import {
   contractAddress,
   secretKey,
   network,
   handleTransaction,
-  deployContract,
 } from "./contract-calls";
 
 const BigNum = require("bn.js");
 
-const haiTitle = "testHai";
-const targetAIP = "suman.aip";
-const allocatedTimeblocks = 500000;
+const haiTitle = "Tony Test New";
+const targetAIP = "tony.aip";
+const allocatedTimeblocks = 32000;
 
 //
 /// Contract calls
@@ -49,5 +34,4 @@ async function createHai(haiTitle: string, targetAIP: string, allocatedTimeblock
   return handleTransaction(transaction);
 }
 
-const valueTest = createHai("First HAI Token", "suman.aip", 500000);
-console.log("end line" + valueTest + " value test" );
+const valueTest = createHai(haiTitle, targetAIP, allocatedTimeblocks);
